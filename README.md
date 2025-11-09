@@ -37,33 +37,40 @@ FROM ecommerce_sales
 WHERE Quantity > 0
 GROUP BY Bulan
 ORDER BY Bulan;
+```
 Insight: Pendapatan meningkat signifikan menjelang akhir tahun, menunjukkan adanya pola musiman.
 
 🏆 2. Produk Terlaris
+```sql
 SELECT Description, SUM(Quantity) AS TotalTerjual
 FROM ecommerce_sales
 WHERE Quantity > 0
 GROUP BY Description
 ORDER BY TotalTerjual DESC
 LIMIT 10;
+```
 Insight: Produk dekorasi dan hadiah kecil menjadi kategori yang paling banyak dibeli oleh pelanggan.
 
 🌍 3. Negara dengan Penjualan Terbanyak
+```sql
 SELECT Country, COUNT(DISTINCT CustomerID) AS TotalPelanggan
 FROM ecommerce_sales
 WHERE Quantity > 0
 GROUP BY Country
 ORDER BY TotalPelanggan DESC
 LIMIT 10;
+```
 Insight: Inggris menjadi negara dengan pelanggan terbanyak serta volume transaksi tertinggi.
 
 👥 4. Pelanggan dengan Pengeluaran Terbesar
+```sql
 SELECT CustomerID, ROUND(SUM(Quantity * UnitPrice), 2) AS TotalSpending
 FROM ecommerce_sales
 WHERE Quantity > 0
 GROUP BY CustomerID
 ORDER BY TotalSpending DESC
 LIMIT 10;
+```
 Insight: Sekitar 10% pelanggan berkontribusi terhadap lebih dari 60% total pendapatan — menunjukkan adanya pelanggan VIP yang sangat berharga.
 
 💡 Key Insights
