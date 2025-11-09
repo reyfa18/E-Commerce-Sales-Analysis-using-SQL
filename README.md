@@ -29,7 +29,7 @@ Langkah yang saya lakukan:
 ## 🔍 SQL Analysis  
 
 ### 🗓️ 1. Total Pendapatan per Bulan
-sql
+```sql
 SELECT 
     DATE_FORMAT(InvoiceDate, '%Y-%m') AS Bulan,
     ROUND(SUM(Quantity * UnitPrice), 2) AS TotalPendapatan
