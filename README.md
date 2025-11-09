@@ -89,4 +89,4 @@ Untuk melihat hasil visualisasi dan tampilan lengkap analisis, kamu bisa membuka
 ✨ Author
 Rayhan Fadhilah
 🎓 Sistem Informasi – Universitas Bina Sarana Informatika
-📫 [LinkedIn](https://linkedin.com/in/rayhanfadhilah)
+📫 [LinkedIn](https://www.linkedin.com/in/rayhanfadhilah/)
