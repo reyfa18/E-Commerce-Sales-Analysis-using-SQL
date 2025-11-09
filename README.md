@@ -83,10 +83,9 @@ Insight: Sekitar 10% pelanggan berkontribusi terhadap lebih dari 60% total penda
 📘 Portfolio PDF
 Untuk melihat hasil visualisasi dan tampilan lengkap analisis, kamu bisa membuka file berikut 👇
 
-👉 E-Commerce Sales Analysis using SQL.pdf
+👉 [**E-Commerce Sales Analysis using SQL.pdf**](E-Commerce%20Sales%20Analysis%20using%20SQL.pdf)
 
-<embed src="E-Commerce Sales Analysis using SQL.pdf" width="100%" height="600px" type="application/pdf">
-✨ Author
-Rayhan Fadhilah
-🎓 Sistem Informasi – Universitas Bina Sarana Informatika
+## ✨ Author  
+Rayhan Fadhilah  
+🎓 Sistem Informasi – Universitas Bina Sarana Informatika  
 📫 [LinkedIn](https://www.linkedin.com/in/rayhanfadhilah/)
