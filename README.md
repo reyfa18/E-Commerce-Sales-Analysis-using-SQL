@@ -64,11 +64,12 @@ Insight: Inggris menjadi negara dengan pelanggan terbanyak serta volume transaks
 
 👥 4. Pelanggan dengan Pengeluaran Terbesar
 ```sql
-SELECT CustomerID, ROUND(SUM(Quantity * UnitPrice), 2) AS TotalSpending
+SELECT CustomerID,
+       ROUND(SUM(Quantity * UnitPrice), 2) AS total_spending,
+       COUNT(InvoiceNo) AS total_transaksi
 FROM ecommerce_sales
-WHERE Quantity > 0
 GROUP BY CustomerID
-ORDER BY TotalSpending DESC
+ORDER BY total_spending DESC
 LIMIT 10;
 ```
 Insight: Sekitar 10% pelanggan berkontribusi terhadap lebih dari 60% total pendapatan — menunjukkan adanya pelanggan VIP yang sangat berharga.
@@ -88,4 +89,4 @@ Untuk melihat hasil visualisasi dan tampilan lengkap analisis, kamu bisa membuka
 ✨ Author
 Rayhan Fadhilah
 🎓 Sistem Informasi – Universitas Bina Sarana Informatika
-📫 LinkedIn | Kaggle
+📫 [LinkedIn](https://linkedin.com/in/rayhanfadhilah)
